@@ -1,0 +1,114 @@
+{
+    "component1": {
+      "items": [
+        {
+          "id": 1,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img-1.jpg",
+          "name": "Women"
+          
+        },
+        {
+          "id": 2,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img-2.jpg",
+          "name": "Men"
+          
+        },
+        {
+          "id": 3,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img-3.jpg",
+          "name": "Kids"
+          
+        }
+      ]
+    },
+    "component2": {
+     
+      "items": [
+        {
+          "id": 1,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image4.jpg",
+          "name": "Home"
+        },
+        {
+          "id": 2,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image-5.jpg",
+          "name": "Design"
+        },
+        {
+          "id": 3,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image-6.jpg",
+          "name": "Clothes"
+        },
+        {
+          "id": 4,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image-7.jpg",
+          "name": "Brand"
+        },
+        {
+          "id": 5,
+          "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image16.jpg",
+          "name": "Awesome"
+        }
+      ]
+    },
+    "component3": {
+     
+      "items": [{
+        "id": 1,
+        "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image-8.png",
+        "name" : "Shop Women"
+      },
+      {
+        "id": 2,
+        "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-image9.png",
+        "name" : "Shop Men"
+      }
+      
+      ]
+    },
+    "component4": {
+      "items": [
+        {
+          "id": 1,
+          "img":"https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img10.png",
+          "name":"Necessity"
+
+        },
+        {
+          "id": 2,
+          "img":"https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img11.png",
+          "name":"Lamp art"
+
+        },
+        {
+          "id": 3,
+          "img":"https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img12.png",
+          "name":"Decoration"
+
+        }
+        
+      ]
+    },
+    "component5": {
+     
+      "items": [{
+        "id": 1,
+        "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img-13.jpg",
+        "name": "Stuff"
+      },
+      {
+        "id": 2,
+        "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img-14.jpg",
+        "name": "Bags"
+      },
+      {
+        "id": 1,
+        "img": "https://qodeinteractive.com/qi-addons-for-elementor/wp-content/uploads/2021/02/product-category-list-img-15.jpg",
+        "name": "T-shirts"
+      }
+        
+      ]
+    }
+    
+  }
+  
