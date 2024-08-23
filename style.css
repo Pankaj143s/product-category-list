@@ -6,6 +6,7 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
 
 #component-one {
@@ -63,53 +64,54 @@ body {
   font-size: 1.25rem;
 }
 @media (max-width: 480px) {
-  #component-one .card-container {
-    flex-direction: column;
+  #component-one .card-heading {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #component-one .card-heading h4 {
+    font-size: 1rem;
+  }
+  #component-one .card-heading h1 {
+    font-size: 2.6rem;
   }
   #component-one .card-container .card {
-    width: 100%;
-    height: auto;
-  }
-  #component-one .card-container .card button {
-    width: 32%;
-    height: 8%;
+    width: 80%;
   }
 }
-@media (max-width: 680px) {
-  #component-one .card-container {
-    flex-direction: column;
-  }
-}
-#component-one .card-container .card button {
-  width: 35%;
-  height: 10%;
-}
-@media (max-width: 1199px) {
-  #component-one .card-container {
-    flex-direction: column;
-  }
-  #component-one .card {
+@media (min-width: 481px) and (max-width: 768px) {
+  #component-one .card-container .card {
     width: 85%;
-    height: auto;
   }
-  #component-one .card button {
-    width: 32%;
+  #component-one .card-container .card-img button {
+    width: 30%;
     height: 8%;
   }
 }
-@media (max-width: 1200px) {
-  #component-one .card-container {
-    display: flex;
+@media (min-width: 769px) and (max-width: 992px) {
+  #component-one .card-container .card {
+    width: 85%;
   }
-  #component-one .card-container .card button {
+  #component-one .card-container .card-img button {
+    width: 30%;
+    height: 7%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  #component-one .card-container .card {
+    width: 25%;
+  }
+  #component-one .card-container .card-img button {
     width: 60%;
     height: 16%;
   }
 }
-@media (max-width: 1440px) {
-  #component-one .card-container .card button {
-    width: 55%;
-    height: 15%;
+@media (min-width: 1201px) and (max-width: 1440px) {
+  #component-one .card-container .card {
+    width: 25%;
+  }
+  #component-one .card-container .card-img button {
+    width: 60%;
+    height: 14%;
   }
 }
 
@@ -158,34 +160,51 @@ body {
   font-weight: 500;
 }
 @media (max-width: 480px) {
-  #component-two .card {
+  #component-two .card-container .card {
     width: 100%;
+  }
+  #component-two .card-container .card p {
+    font-size: 3.1rem;
   }
 }
-@media (max-width: 768px) {
-  #component-two .card {
+@media (min-width: 481px) and (max-width: 768px) {
+  #component-two .card-container .card {
     width: 100%;
   }
-  #component-two .card p {
+  #component-two .card-container .card p {
     font-size: 4.3rem;
   }
 }
-@media (max-width: 992px) {
-  #component-two .card {
+@media (min-width: 769px) and (max-width: 992px) {
+  #component-two .card-container .card {
     width: 100%;
   }
-  #component-two .card p {
+  #component-two .card-container .card p {
     font-size: 4.3rem;
   }
 }
-@media (min-width: 1441px) {
-  #component-two .card {
-    width: 33.33%;
+@media (min-width: 993px) and (max-width: 1200px) {
+  #component-two .card-container .card {
+    width: 20%;
+  }
+  #component-two .card-container .card p {
+    font-size: 3.1rem;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1680px) {
+  #component-two .card-container .card {
+    width: 33.3%;
+  }
+  #component-two .card-container .card p {
+    font-size: 3.1rem;
   }
 }
 @media (min-width: 1681px) {
-  #component-two .card {
+  #component-two .card-container .card {
     width: 20%;
+  }
+  #component-two .card-container .card p {
+    font-size: 3.1rem;
   }
 }
 
@@ -194,6 +213,7 @@ body {
 }
 #component-three .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -249,6 +269,7 @@ body {
 }
 #component-three .card .view-more p {
   font-size: 2.25rem;
+  font-weight: 500;
   z-index: 1;
 }
 #component-three .card .view-more span {
@@ -286,63 +307,49 @@ body {
 }
 @media (max-width: 480px) {
   #component-three .card-container .card {
-    width: 100vw;
-    height: 80vw;
+    width: 400px;
+    height: 340px;
   }
   #component-three .card-container .card img {
-    width: 50vw;
-    height: auto;
+    width: 62%;
   }
 }
-@media (max-width: 768px) {
-  #component-three .card-container {
-    flex-direction: column;
+@media (min-width: 481px) and (max-width: 768px) {
+  #component-three .card-container .card {
+    width: 650px;
+    height: 390px;
   }
-  #component-three .card {
-    width: 670px;
-    height: 320px;
-  }
-  #component-three .card img {
-    width: 35%;
-    height: auto;
+  #component-three .card-container .card img {
+    width: 45%;
   }
 }
-@media (max-width: 992px) {
-  #component-three .card-container {
-    flex-direction: column;
-  }
-  #component-three .card {
+@media (min-width: 769px) and (max-width: 992px) {
+  #component-three .card-container .card {
     width: 780px;
     height: 480px;
   }
-  #component-three .card img {
+  #component-three .card-container .card img {
     width: 46%;
-    height: auto;
   }
 }
-@media (max-width: 1200px) {
-  #component-three .card {
+@media (min-width: 993px) and (max-width: 1200px) {
+  #component-three .card-container .card {
     width: 460px;
-    height: 310px;
+    height: 300px;
+  }
+  #component-three .card-container .card img {
+    width: 48%;
   }
 }
-@media (max-width: 1440px) {
-  #component-three .card {
-    width: 530px;
-    height: 360px;
+@media (min-width: 1201px) and (max-width: 1440px) {
+  #component-three .card-container .card {
+    width: 540px;
+    height: 380px;
   }
-  #component-three .card img {
+  #component-three .card-container .card img {
     width: 52%;
-    height: auto;
   }
 }
-@media (min-width: 1681) {
-  #component-three .card {
-    width: 460px;
-    height: 320px;
-  }
-}
-
 #component-four {
   margin-bottom: 150px;
 }
@@ -353,13 +360,28 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   text-align: center;
+  width: 100%;
+  position: relative;
+}
+#component-four .card-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+#component-four .card-heading h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#component-four .card-heading h1 {
+  font-size: 3.1rem;
+  font-weight: 500;
 }
 #component-four .card {
-  width: 430px;
-  height: 330px;
+  width: 30%;
+  height: auto;
   background: #f6f6f6;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 1.6;
 }
 #component-four .card:hover .card-img img {
   opacity: 0.7;
@@ -370,43 +392,43 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-#component-four .card img {
-  width: 50%;
+#component-four .card .card-img img {
+  width: 40%;
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
+  bottom: 10%;
+  right: 10%;
   transition: 0.5s ease;
 }
 #component-four .card .view-more {
   position: absolute;
-  bottom: 0;
-  width: fit-content;
+  bottom: 20px;
+  left: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
-  margin: 40px;
+  padding: 20px;
 }
 #component-four .card .view-more p {
-  font-size: 1.6rem;
+  font-size: 2.25rem;
   font-weight: 500;
+  margin: 0;
 }
 #component-four .card .view-more span {
   display: flex;
   align-items: center;
-  position: relative;
+  gap: 8px;
   cursor: pointer;
 }
 #component-four .card .view-more button {
   border: none;
   background: transparent;
-  font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
-  cursor: pointer;
 }
 #component-four .card .view-more button::after {
   content: "";
@@ -423,7 +445,7 @@ body {
 }
 #component-four .card .view-more i {
   font-size: 1.2rem;
-  margin-left: 8px;
+  margin-left: 1px;
   transition: transform 0.3s ease;
 }
 #component-four .card .view-more i:hover {
@@ -434,48 +456,122 @@ body {
     width: 100%;
     height: auto;
   }
-  #component-four .card-container .card img {
-    width: 60%;
-    right: 5%;
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
+  }
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
+  }
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
+    font-weight: 700;
   }
 }
-@media (max-width: 768px) {
-  #component-four .card-container .card {
-    width: 600px;
-    height: 400px;
-  }
-}
-@media (max-width: 992px) {
+@media (min-width: 481px) and (max-width: 768px) {
   #component-four .card-container .card {
     width: 100%;
+    height: auto;
   }
-  #component-four .card-container .card img {
-    width: 30%;
-    right: 20%;
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
   }
-}
-@media (max-width: 1200px) {
-  #component-four .card-container .card {
-    width: 380px;
-    height: 310px;
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
   }
-}
-@media (max-width: 1440px) {
-  #component-four .card-container .card {
-    width: 460px;
-    height: 360px;
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
+    font-weight: 700;
   }
 }
-@media (max-width: 1679px) {
+@media (min-width: 769px) and (max-width: 992px) {
   #component-four .card-container .card {
-    width: 539px;
-    height: 400px;
+    width: 100%;
+    height: auto;
+  }
+  #component-four .card-container .view-more {
+    padding: 15px;
+  }
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
+  }
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
+  }
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
   }
 }
-@media (min-width: 1680px) {
+@media (min-width: 993px) and (max-width: 1200px) {
   #component-four .card-container .card {
-    width: 540px;
-    height: 400px;
+    width: 31.5%;
+    height: auto;
+  }
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
+  }
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
+  }
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  #component-four .card-container .card {
+    width: 31.7%;
+    height: auto;
+  }
+  #component-four .card-container .card .card-img img {
+    bottom: 15%;
+  }
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
+  }
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
+  }
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1680px) {
+  #component-four .card-container .card {
+    width: 31.7%;
+    height: auto;
+  }
+  #component-four .card-container .card .card-img img {
+    bottom: 15%;
+  }
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
+  }
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
+  }
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1681px) {
+  #component-four .card-container .card {
+    width: 31.7%;
+    height: auto;
+  }
+  #component-four .card-container .card .card-img img {
+    bottom: 15%;
+  }
+  #component-four .card-container .view-more p {
+    font-size: 1.6rem;
+  }
+  #component-four .card-container .view-more button {
+    font-size: 1rem;
+  }
+  #component-four .card-container .view-more i {
+    font-size: 1rem;
+    font-weight: 700;
   }
 }
 
@@ -544,7 +640,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   #component-five .card {
     width: 85%;
   }
@@ -552,7 +648,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   #component-five .card {
     width: 78%;
   }
